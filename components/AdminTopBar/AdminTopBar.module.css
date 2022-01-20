@@ -1,0 +1,228 @@
+.topBar,
+.topBar__invisible {
+    color: var(--color-whitish);
+    font-size: 16px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.topBar {
+    background: var(--color-bg-lighter);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.navigation,
+.navigationSlide {
+    margin: 0;
+    padding: 0 1em 0;
+    font-family: var(--font-default);
+}
+
+.item,
+.item__active {
+    display: inline;
+    position: relative;
+}
+
+.item,
+.subItem {
+    font-weight: 100;
+}
+
+.item__active,
+.subItem__active {
+    font-weight: 700 !important;
+}
+
+.item__dropdown {
+    cursor: default;
+}
+
+.navigation a,
+.navigationSlide a {
+    padding: 1em;
+    color: var(--color-whitish);
+}
+
+.item__dropdown:hover .showSub {
+    display: block;
+}
+
+.sub,
+.showSub {
+    position: absolute;
+    padding: 1em 0;
+    margin: 30px 0 0;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    width: auto;
+    background: var(--color-bg-lighter);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.sub li,
+.showSub li {
+    padding-top: 2px;
+}
+
+.sub li a,
+.showSub li a {
+    display: block;
+    padding: 0.8em 1.8em;
+    width: 100%;
+}
+
+.topBarLogo {
+    margin-left: 5%;
+    height: 80px;
+}
+
+.hamburger,
+.hamburger__fixed {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .emptyBox {
+        display: none;
+    }
+
+    .menuBox {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: 111;
+    }
+
+    .menuBox__bg,
+    .emptyBox__bg,
+    .navigation,
+    .navigationSlide {
+        position: fixed;
+        right: 0;
+        transition: transform 0.2s ease-in-out;
+        z-index: 111;
+    }
+
+    .menuBox__bg,
+    .emptyBox__bg {
+        top: 0;
+        height: 100%;
+        width: 55%;
+        background-color: var(--color-bg-lighter);
+    }
+
+    .navigation,
+    .navigationSlide {
+        top: 80px;
+        bottom: 0;
+        width: 55%;
+        height: calc(100vh - 80px);
+    }
+
+    .navigation,
+    .emptyBox__bg {
+        transform: translateX(100%);
+    }
+
+    .navigationSlide,
+    .menuBox__bg {
+        transform: translateX(0);
+    }
+
+    .item,
+    .item__active {
+        display: block;
+    }
+
+    .item a,
+    .item__active a {
+        padding: 0 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger,
+    .hamburger__fixed {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 2rem;
+        cursor: pointer;
+        padding: 0;
+        z-index: 111;
+        border: none;
+        background-color: transparent;
+    }
+
+    .hamburger:focus,
+    .hamburger__fixed:focus {
+        outline: none;
+    }
+
+    .hamburger__fixed {
+        position: fixed;
+        right: 0;
+    }
+
+    .hamburger div,
+    .hamburger__fixed div {
+        width: 1.5rem;
+        height: 0.15rem;
+        background-color: var(--color-extra);
+        border-radius: 1px;
+        transition: all 0.2s linear;
+        position: relative;
+        transform-origin: 1px;
+    }
+
+    .hamburger div:first-child,
+    .hamburger div:nth-child(3) {
+        transform: rotate(0);
+    }
+
+    .hamburger__fixed div:first-child {
+        transform: rotate(45deg);
+    }
+
+    .hamburger__fixed div:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .hamburger div:nth-child(2) {
+        opacity: 1;
+    }
+
+    .hamburger__fixed div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .item__dropdown {
+        cursor: pointer;
+    }
+
+    .item,
+    .item__active {
+        padding: 1rem 0;
+    }
+
+    .showExercises .sub {
+        display: block;
+        position: static;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.13);
+        padding: 0 0 0 1em;
+    }
+}

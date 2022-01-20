@@ -1,0 +1,108 @@
+.sentenceContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 1em auto;
+}
+
+.inputsContainer {
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .sentenceContainer {
+    width: 100%;
+  }
+}
+
+.helpIcon {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: rgba(170, 170, 170, 1);
+  cursor: pointer;
+}
+
+.helpTextIcon {
+  position: absolute;
+  left: 8px;
+  top: 25px;
+  cursor: pointer;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: rgba(170, 170, 170, 1);
+}
+
+.base {
+  display: inline-flex;
+  position: relative;
+  margin: 0 5px 3px 0;
+  font-family: var(--font-default);
+}
+
+.base img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 4px;
+  margin-right: 2px;
+  height: 60%;
+  display: flex;
+  z-index: 2;
+}
+
+.tutorialBox {
+  position: relative;
+}
+
+.open {
+  position: absolute;
+  display: block;
+  background-color: var(--color-prompt);
+  color: var(--color-bg-darker);
+  bottom: 100%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 0.9em;
+  z-index: 2;
+}
+
+.closed {
+  display: none;
+}
+
+.input {
+  background-color: var(--color-whitish);
+  z-index: 1;
+}
+
+.right {
+  background-color: var(--color-right);
+}
+.wrong {
+  background-color: var(--color-wrong);
+}
+.almost {
+  background-color: var(--color-almost);
+}
+
+.wrong,
+.right,
+.almost,
+.input,
+.open,
+.base img {
+  border: none;
+  border-radius: 2px;
+}
+
+.input:focus-visible,
+.right:focus-visible,
+.almost:focus-visible,
+.wrong:focus-visible {
+  outline: none;
+  border: solid 2px var(--color-input-border);
+}

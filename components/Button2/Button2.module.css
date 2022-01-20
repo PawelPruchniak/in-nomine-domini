@@ -1,0 +1,56 @@
+.special,
+.button,
+.whiteButton {
+    font-family: var(--font-default);
+    font-weight: 300;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.special {
+    background: var(--color-extra);
+    color: var(--color-bg-darker);
+    padding: 0 1em;
+    line-height: 2.2em;
+    font-size: 1.7em;
+}
+
+.button {
+    font-size: 1.2em;
+}
+
+.button,
+.whiteButton:hover {
+    color: var(--color-extra);
+    border: 1px solid var(--color-extra);
+}
+
+.button,
+.whiteButton {
+    padding: 0.5em 2.6em;
+    display: inline-block;
+}
+
+.whiteButton {
+    color: var(--color-whitish);
+    border: 1px solid var(--color-whitish);
+    transition: all 0.3s ease-in-out;
+}
+
+.small {
+    font-size: 1em;
+}
+
+@media (max-width: 900px) {
+    .special {
+        font-size: 1.3em;
+    }
+
+    .button,
+    .whiteButton {
+        padding: 0.2em 2.2em;
+        font-size: 1.2em;
+    }
+}

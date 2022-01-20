@@ -1,0 +1,56 @@
+.sentenceContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 1em auto;
+}
+
+.inputsContainer {
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hide {
+    border: none;
+}
+
+.show {
+    border-bottom: 1px solid var(--color-extra);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: translationSlideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-align: right;
+    padding: 1em 1em 0.2em;
+    font-size: 1.5em;
+    font-family: var(--font-headers);
+    font-style: italic;
+}
+
+.done {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 20px 0px 0px;
+    align-items: center;
+    gap: 20px;
+}
+
+@keyframes translationSlideIn {
+    from {
+        opacity: 0;
+        margin-right: -50%;
+    }
+    to {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .sentenceContainer {
+        width: 100%;
+    }
+}

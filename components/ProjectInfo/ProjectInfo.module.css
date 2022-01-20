@@ -1,0 +1,10 @@
+.sectionTitle {
+    margin-top: 1em;
+    border-bottom: 0.5px solid var(--color-whitish);
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.section {
+    margin: 2em 0;
+}

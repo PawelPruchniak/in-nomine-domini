@@ -1,0 +1,137 @@
+.instruction {
+    line-height: 1.6em;
+}
+
+.firstSection,
+.secondSection,
+.thirdSection {
+    display: flex;
+    margin: 2em 0;
+}
+
+.firstSection {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.materialsLink {
+    display: block;
+    font-size: 5em;
+    color: var(--color-extra);
+    padding-left: 1em;
+}
+
+.secondSection {
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondSection p,
+.exerciseWrapper p {
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.thirdSection {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.exercisesList {
+    padding: 1em 0;
+}
+
+.exercisesList > li {
+    margin-bottom: 4em;
+}
+
+.marquise {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--color-extra);
+    margin-bottom: 1em;
+}
+
+.exerciseTitle {
+    color: var(--color-extra);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.exerciseWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exerciseDiff {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.exerciseDiff p {
+    padding: 0;
+    width: auto;
+    margin-right: 2em;
+}
+
+.hard,
+.medium,
+.easy {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+.hard {
+    background: var(--color-hard);
+}
+.medium {
+    background: var(--color-medium);
+}
+.easy {
+    background: var(--color-easy);
+}
+
+.exerciseVertBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exerciseVertBox img {
+    width: 50%;
+}
+
+.exerciseInstruction {
+    padding-right: 1em;
+}
+
+.exerciseInstruction > li {
+    padding: 0.5em 0;
+}
+
+.exerciseInstruction li::marker {
+    color: var(--color-extra);
+    font-weight: 400;
+}
+
+.right,
+.wrong,
+.almost {
+    font-weight: 400;
+}
+.right {
+    color: var(--color-right);
+}
+.wrong {
+    color: var(--color-wrong);
+}
+.almost {
+    color: var(--color-almost);
+}

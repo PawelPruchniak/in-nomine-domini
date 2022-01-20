@@ -1,0 +1,25 @@
+.addDocumentButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 3em 0;
+}
+
+.addDocumentButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-whitish);
+    border-radius: 2px;
+    color: var(--color-whitish);
+    font-size: 14px;
+    padding: .5em 1em;
+}
+
+.addDocumentButton:hover {
+    background-color: #333333;
+}
+
+.addDocumentButton>*:first-child {
+    margin-right: .5em;
+}

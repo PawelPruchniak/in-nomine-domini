@@ -1,0 +1,10 @@
+.topBarLogo {
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+    height: 80px;
+}
+
+.medium {
+    height: 120px !important;
+}

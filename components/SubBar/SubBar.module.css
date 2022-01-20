@@ -1,0 +1,54 @@
+.base {
+    font-family: var(--font-headers);
+    font-weight: 100;
+    font-size: 18px;
+    width: 100%;
+    color: var(--color-whitish);
+    padding: 0;
+}
+
+.menuCell,
+.menuCell__active {
+    display: inline-block;
+    min-width: 20%;
+    text-align: center;
+}
+
+.menuCell a,
+.menuCell__active a {
+    display: block;
+    color: var(--color-whitish);
+}
+
+.menuCell hr,
+.menuCell__active hr {
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border: none;
+}
+
+.menuCell hr {
+    border-top: 1px solid var(--color-whitish);
+}
+
+.menuCell__active hr {
+    border-top: 3px solid var(--color-whitish);
+}
+
+.menuCell__active {
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .base {
+        font-size: 14px;
+    }
+
+    .menuCell a,
+    .menuCell__active a {
+        padding: 0 1em;
+    }
+
+}

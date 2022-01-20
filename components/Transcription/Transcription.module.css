@@ -1,0 +1,19 @@
+.transcription {
+    font-family: var(--font-default);
+    font-weight: normal;
+    color: var(--color-whitish);
+}
+
+.done {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 20px 0px 0px;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .transcription {
+        padding: 10px 0;
+    }
+}

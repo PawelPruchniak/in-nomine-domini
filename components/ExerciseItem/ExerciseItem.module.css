@@ -1,0 +1,84 @@
+.base {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25vh;
+}
+
+.hide {
+    display: none;
+}
+
+.hard,
+.medium,
+.easy {
+    display: none;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    float: right;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+
+.hard {
+    background: var(--color-hard);
+}
+
+.medium {
+    background: var(--color-medium);
+}
+
+.easy {
+    background: var(--color-easy);
+}
+
+.infoBar {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 10pt;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.infoBar p {
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    margin-left: 10%;
+}
+
+.base:hover {
+    cursor: pointer;
+}
+
+.base:hover .infoBar,
+.base:hover .easy,
+.base:hover .medium,
+.base:hover .hard {
+    display: inherit;
+}
+
+@media (max-width: 900px) {
+    .base {
+        max-height: 50vh;
+    }
+
+    .hard,
+    .medium,
+    .hard {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .infoBar,
+    .hard,
+    .medium,
+    .hard {
+        display: inherit;
+    }
+
+}

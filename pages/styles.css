@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Main colors */
+    --color-bg-darker: #222222;
+    --color-bg-lighter: #282828;
+    --color-extra: #d8a28d;
+    --color-whitish: #fefefe;
+
+    /* Difficulty colors */
+    --color-hard: #ff0000;
+    --color-medium: #ffff00;
+    --color-easy: #70c074;
+
+    /* Input colors */
+    --color-right: #bfffa8;
+    --color-wrong: #ff8e8e;
+    --color-almost: #ffc786;
+    --color-input-border: #4c8bf5;
+    --color-prompt: #c8c8c8;
+
+    /* Main fonts */
+    --font-default: 'Roboto', sans-serif;
+    --font-headers: 'Cormorant Garamond', serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-bg-darker);
+    margin: 0;
+    padding: 0;
+    color: var(--color-whitish);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:-webkit-any-link,
+a:-moz-any-link,
+a:any-link {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headers);
+}

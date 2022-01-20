@@ -1,0 +1,69 @@
+.section {
+    margin: 2em 0;
+}
+
+.sectionTitle {
+    font-weight: 100;
+    margin: 2em 0 0;
+    color: var(--color-extra);
+}
+
+.numberList li::marker {
+    font-weight: 400;
+}
+
+.list > li,
+.bulletList > li,
+.nonList li {
+    padding: 0.3em 0;
+}
+
+.list {
+    padding-left: 0;
+}
+
+.bulletList {
+    list-style-type: disc;
+}
+
+.marquise {
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--color-extra);
+    margin-bottom: 1em;
+}
+
+.subTitle {
+    margin-top: 1em;
+    border-bottom: 0.5px solid var(--color-whitish);
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.nonList {
+    padding-left: 0;
+}
+
+.nonList a {
+    color: inherit;
+}
+
+.nonList a:hover {
+    text-decoration: underline;
+}
+
+.imgFigure {
+    padding-bottom: 1em;
+}
+
+.imgFigure img {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgFigureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
