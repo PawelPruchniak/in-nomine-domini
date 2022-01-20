@@ -1,12 +1,12 @@
-### Wymagania:
+### Requirements:
 
 -   node.js
 -   npm
-    > [Tutaj ](https://nodejs.org/en/download/) dostępna jest do pobrania najnowsza wersja node.js + npm.
+    > The latest version of node + npm is available [here ](https://nodejs.org/en/download/).
 
-### Uruchamianie projektu:
+### Running the project:
 
-1. Po raz pierwszy:
+1. For the first time:
 
 ```
 npm install
@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-2. Kolejne uruchomienia:
+2. After that:
 
 ```
 npm run dev
